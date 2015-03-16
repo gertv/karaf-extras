@@ -13,13 +13,7 @@ public class ManagedServiceImpl implements ManagedService {
 
     @Override
     public void updated(Dictionary<String, ?> dictionary) throws ConfigurationException {
-        System.out.println("We have a new configuration:");
-
-        Enumeration keys = dictionary.keys();
-        while (keys.hasMoreElements()) {
-            String key = keys.nextElement().toString();
-            System.out.println("- " + key + " -> " + dictionary.get(key));
-        }
+        // TODO: System.out.println() the new configuration
     }
 
 }

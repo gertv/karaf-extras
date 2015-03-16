@@ -13,27 +13,14 @@ import java.util.Hashtable;
  * - a ManagedServiceFactory implementation
  */
 public class Activator implements BundleActivator {
-
-    private ServiceRegistration<ManagedService> registration1;
-    private ServiceRegistration<ManagedServiceFactory> registration2;
-
+    
     @Override
     public void start(BundleContext bundleContext) throws Exception {
-        Dictionary<String, String> props = new Hashtable<String, String>();
-        props.put(Constants.SERVICE_PID, "be.anova.course.karaf");
-
-        registration1 = bundleContext.registerService(ManagedService.class,
-                                                     new ManagedServiceImpl(),
-                                                     props);
-
-        registration2 = bundleContext.registerService(ManagedServiceFactory.class,
-                                                      new ManagedServiceFactoryImpl(),
-                                                      props);
+        //TODO: register the managed service and managed service factory implementations
     }
 
     @Override
     public void stop(BundleContext bundleContext) throws Exception {
-        registration1.unregister();
-        registration2.unregister();
+        //TODO: unregister the services again
     }
 }

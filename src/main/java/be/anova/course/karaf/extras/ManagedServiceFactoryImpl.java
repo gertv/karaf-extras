@@ -17,19 +17,13 @@ public class ManagedServiceFactoryImpl implements ManagedServiceFactory {
     }
 
     @Override
-    public void updated(String s, Dictionary<String, ?> dictionary) throws ConfigurationException {
-        System.out.println("We have a new configuration (" + s + "):");
-
-        Enumeration keys = dictionary.keys();
-        while (keys.hasMoreElements()) {
-            String key = keys.nextElement().toString();
-            System.out.println("- " + key + " -> " + dictionary.get(key));
-        }
+    public void updated(String pid, Dictionary<String, ?> dictionary) throws ConfigurationException {
+        // TODO: Print the updated configuration
     }
 
     @Override
-    public void deleted(String s) {
-        System.out.println("Removing existing configuration: " + s);
+    public void deleted(String pid) {
+        // TODO: Print the id of the configuration that was deleted
     }
     
 }
