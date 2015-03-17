@@ -12,7 +12,7 @@ import java.util.Enumeration;
 public class ManagedServiceImpl implements ManagedService {
 
     @Override
-    public void updated(Dictionary<String, ?> dictionary) throws ConfigurationException {
+    public void updated(Dictionary dictionary) throws ConfigurationException {
         System.out.println("We have a new configuration:");
 
         Enumeration keys = dictionary.keys();

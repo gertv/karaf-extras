@@ -17,7 +17,7 @@ public class ManagedServiceFactoryImpl implements ManagedServiceFactory {
     }
 
     @Override
-    public void updated(String s, Dictionary<String, ?> dictionary) throws ConfigurationException {
+    public void updated(String s, Dictionary dictionary) throws ConfigurationException {
         System.out.println("We have a new configuration (" + s + "):");
 
         Enumeration keys = dictionary.keys();
