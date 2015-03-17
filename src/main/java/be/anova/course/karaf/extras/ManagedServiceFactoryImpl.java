@@ -17,7 +17,7 @@ public class ManagedServiceFactoryImpl implements ManagedServiceFactory {
     }
 
     @Override
-    public void updated(String pid, Dictionary<String, ?> dictionary) throws ConfigurationException {
+    public void updated(String s, Dictionary dictionary) throws ConfigurationException {
         // TODO: Print the updated configuration
     }
 
